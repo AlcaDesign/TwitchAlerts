@@ -1,0 +1,27 @@
+{
+  "name": "TwitchAlerts",
+  "version": "1.0.0",
+  "description": "Basic TwitchAlerts.com API module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlcaDesign/TwitchAlerts"
+  },
+  "keywords": [
+    "TwitchAlerts",
+    "Alca",
+    "Twitch",
+    "Alerts",
+    "Donations",
+    "Follows"
+  ],
+  "author": "Jacob \"Alca\" Foster",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlcaDesign/TwitchAlerts/issues"
+  },
+  "homepage": "https://github.com/AlcaDesign/TwitchAlerts"
+}
