@@ -18,6 +18,8 @@ TwitchAlerts.prototype.getRecentDonations = function getRecentDonations(options)
 		return this.API.request(extendOptions(opts, options));
 	};
 
+
+// Not really working yet
 TwitchAlerts.prototype.getDonationGoal = function getDonationGoal(options) {
 		var opts = {
 					name: 'donationGoal'

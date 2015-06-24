@@ -1,7 +1,8 @@
 {
 	"names": {
 			"v1": {
-					"donations": "donations"
+					"donations": "donations",
+					"donationGoal": "donationGoal"
 				}
 		},
 	"API": {
@@ -16,7 +17,7 @@
 					},
 					"method": "GET",
 					"path": "donations",
-					"contentType": "json",
+					"contentType": "*/*",
 					"queryOptions": []
 				},
 				{
