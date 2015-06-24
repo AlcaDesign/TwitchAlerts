@@ -10,7 +10,12 @@ recDon.then(function(data) {
 		console.log(util.inspect(data, { depth: 10 }));
 	}).catch(function(err) {
 			var error = err.error;
-			error.error ? console.log('%s - %s', error.error, error.message) : console.log('%d - %s', err.response.statusCode, err.response.statusMessage);
+			if(error.error) {
+				console.log('%s - %s', error.error, error.message)
+			}
+			else {
+				console.log('%d - %s', err.response.statusCode, err.response.statusMessage);
+			}
 		});
 
 // Not yet supported
@@ -21,5 +26,10 @@ donGoal.then(function(data) {
 		console.log(util.inspect(data, { depth: 10 }));
 	}).catch(function(err) {
 			var error = err.error;
-			error.error ? console.log('%s - %s', error.error, error.message) : console.log('%d - %s', err.response.statusCode, err.response.statusMessage);
+			if(error.error) {
+				console.log('%s - %s', error.error, error.message)
+			}
+			else {
+				console.log('%d - %s', err.response.statusCode, err.response.statusMessage);
+			}
 		});*/

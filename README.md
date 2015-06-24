@@ -91,7 +91,22 @@ You can pass extra querystring elements via the `options` argument as `qs`.
 
 #### ta.getDonationGoal(options)
 
-Gets the donation goal data for the authenticated user.
+Gets the donation goal data for the authenticated user. In the response, you should get an object with a hash and the data pertaining to the donation goal widget. If you pass the hash in the querystring, you will get an array back until there is an update to the donation goal like: a donation was added, a donation was removed, etc. I can only get this to work in the browser from the donation widget due to Access-Control-Allow-Origin:
+
+```javasciprt
+	
+	var access_token = 'access_token_here';
+	$.ajax({
+			url: 'http://www.twitchalerts.com/widgets/donation-goal',
+			data: {
+					token: access_token,
+					filemtime: 1
+				}
+		}).success(function(data) { console.log(data) })
+	
+```
+
+With the jQuery ajax settings of `dataType` set to `jsonp` and `crossDomain` set to `true`, it returns the HTML for the page rather than the expected JSON.
 
 You can pass extra querystring elements via the `options` argument as `qs`.
 
